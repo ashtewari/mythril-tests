@@ -1,0 +1,272 @@
+PS E:\temp>
+PS E:\temp>
+PS E:\temp> docker run -v E:\share\:/data mythril/myth -v4 analyze /data/mythx-tests\05222022-26/SimpleDAOWithImport.sol
+mythril.mythril.mythril_config [INFO]: Creating mythril data directory
+mythril.mythril.mythril_config [INFO]: No config file found. Creating default: /root/.mythril/config.ini
+mythril.mythril.mythril_config [INFO]: Infura key not provided, so onchain access is disabled. Use --infura-id <INFURA_ID> or set it in the environment variable INFURA_ID or in the ~/.mythril/config.ini file
+mythril.support.signatures [INFO]: Using signature database at /root/.mythril/signatures.db
+solcx [INFO]: Downloading from https://solc-bin.ethereum.org/linux-amd64/solc-linux-amd64-v0.4.24+commit.e67f0147
+solcx [INFO]: solc 0.4.24 successfully installed at: /root/.solcx/solc-v0.4.24
+solcx [INFO]: Using solc version 0.4.24
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+/data/mythx-tests\05222022-26/SimpleDAOWithImport.sol:8:1: ParserError: Source "/lib/SelfDestructMultiTxFeasible.sol" not found: File not found.
+import "/lib/SelfDestructMultiTxFeasible.sol";
+^--------------------------------------------^
+
+PS E:\temp> docker run -v E:\share\:/data mythril/myth -v4 analyze /data/mythx-tests\05222022-26/SimpleDAOWithImport.sol
+mythril.mythril.mythril_config [INFO]: Creating mythril data directory
+mythril.mythril.mythril_config [INFO]: No config file found. Creating default: /root/.mythril/config.ini
+mythril.mythril.mythril_config [INFO]: Infura key not provided, so onchain access is disabled. Use --infura-id <INFURA_ID> or set it in the environment variable INFURA_ID or in the ~/.mythril/config.ini file
+mythril.support.signatures [INFO]: Using signature database at /root/.mythril/signatures.db
+solcx [INFO]: Downloading from https://solc-bin.ethereum.org/linux-amd64/solc-linux-amd64-v0.4.24+commit.e67f0147
+solcx [INFO]: solc 0.4.24 successfully installed at: /root/.solcx/solc-v0.4.24
+solcx [INFO]: Using solc version 0.4.24
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+/data/mythx-tests\05222022-26/SimpleDAOWithImport.sol:8:1: ParserError: Source "data/lib/SelfDestructMultiTxFeasible.sol" not found: File not found.
+import "data/lib/SelfDestructMultiTxFeasible.sol";
+^------------------------------------------------^
+
+PS E:\temp> docker run -v E:\share\:/data mythril/myth -v4 analyze /data/mythx-tests\05222022-26/SimpleDAOWithImport.sol
+mythril.mythril.mythril_config [INFO]: Creating mythril data directory
+mythril.mythril.mythril_config [INFO]: No config file found. Creating default: /root/.mythril/config.ini
+mythril.mythril.mythril_config [INFO]: Infura key not provided, so onchain access is disabled. Use --infura-id <INFURA_ID> or set it in the environment variable INFURA_ID or in the ~/.mythril/config.ini file
+mythril.support.signatures [INFO]: Using signature database at /root/.mythril/signatures.db
+solcx [INFO]: Downloading from https://solc-bin.ethereum.org/linux-amd64/solc-linux-amd64-v0.4.24+commit.e67f0147
+solcx [INFO]: solc 0.4.24 successfully installed at: /root/.solcx/solc-v0.4.24
+solcx [INFO]: Using solc version 0.4.24
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+/data/mythx-tests\05222022-26/SimpleDAOWithImport.sol:8:1: ParserError: Source "SelfDestructMultiTxFeasible.sol" not found: File not found.
+import "SelfDestructMultiTxFeasible.sol";
+^---------------------------------------^
+
+PS E:\temp> docker run -v E:\share\:/data mythril/myth -v4 analyze /data/mythx-tests\05222022-26/SimpleDAOWithImport.sol
+mythril.mythril.mythril_config [INFO]: Creating mythril data directory
+mythril.mythril.mythril_config [INFO]: No config file found. Creating default: /root/.mythril/config.ini
+mythril.mythril.mythril_config [INFO]: Infura key not provided, so onchain access is disabled. Use --infura-id <INFURA_ID> or set it in the environment variable INFURA_ID or in the ~/.mythril/config.ini file
+mythril.support.signatures [INFO]: Using signature database at /root/.mythril/signatures.db
+solcx [INFO]: Downloading from https://solc-bin.ethereum.org/linux-amd64/solc-linux-amd64-v0.4.24+commit.e67f0147
+solcx [INFO]: solc 0.4.24 successfully installed at: /root/.solcx/solc-v0.4.24
+solcx [INFO]: Using solc version 0.4.24
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+/data/mythx-tests\05222022-26/SimpleDAOWithImport.sol:8:1: ParserError: Source "/data/lib/SelfDestructMultiTxFeasible.sol" not found: File not found.
+import "../lib/SelfDestructMultiTxFeasible.sol";
+^----------------------------------------------^
+
+PS E:\temp> docker run -v E:\share\:/data mythril/myth -v4 analyze /data/mythx-tests/05222022-26/SimpleDAOWithImport.sol
+mythril.mythril.mythril_config [INFO]: Creating mythril data directory
+mythril.mythril.mythril_config [INFO]: No config file found. Creating default: /root/.mythril/config.ini
+mythril.mythril.mythril_config [INFO]: Infura key not provided, so onchain access is disabled. Use --infura-id <INFURA_ID> or set it in the environment variable INFURA_ID or in the ~/.mythril/config.ini file
+mythril.support.signatures [INFO]: Using signature database at /root/.mythril/signatures.db
+solcx [INFO]: Downloading from https://solc-bin.ethereum.org/linux-amd64/solc-linux-amd64-v0.4.24+commit.e67f0147
+solcx [INFO]: solc 0.4.24 successfully installed at: /root/.solcx/solc-v0.4.24
+solcx [INFO]: Using solc version 0.4.24
+mythril.laser.ethereum.svm [INFO]: LASER EVM initialized with dynamic loader: <mythril.support.loader.DynLoader object at 0x7f6f00145760>
+mythril.laser.ethereum.strategy.extensions.bounded_loops [INFO]: Loaded search strategy extension: Loop bounds (limit = 3)
+mythril.laser.plugin.loader [INFO]: Loading laser plugin: coverage
+mythril.laser.plugin.loader [INFO]: Loading laser plugin: mutation-pruner
+mythril.laser.plugin.loader [INFO]: Loading laser plugin: call-depth-limit
+mythril.laser.plugin.loader [INFO]: Loading laser plugin: instruction-profiler
+mythril.laser.plugin.loader [INFO]: Loading laser plugin: dependency-pruner
+mythril.laser.plugin.loader [INFO]: Instrumenting symbolic vm with plugin: coverage
+mythril.laser.plugin.loader [INFO]: Instrumenting symbolic vm with plugin: mutation-pruner
+mythril.laser.plugin.loader [INFO]: Instrumenting symbolic vm with plugin: call-depth-limit
+mythril.laser.plugin.loader [INFO]: Instrumenting symbolic vm with plugin: instruction-profiler
+mythril.laser.plugin.loader [INFO]: Instrumenting symbolic vm with plugin: dependency-pruner
+mythril.laser.ethereum.svm [INFO]: Starting contract creation transaction
+mythril.laser.ethereum.svm [INFO]: Finished contract creation, found 1 open states
+mythril.laser.ethereum.svm [INFO]: Starting message call transaction, iteration: 0, 1 initial states
+mythril.laser.plugin.plugins.coverage.coverage_plugin [INFO]: Number of new instructions covered in tx 0: 507
+mythril.laser.ethereum.svm [INFO]: Starting message call transaction, iteration: 1, 3 initial states
+mythril.analysis.module.modules.suicide [INFO]: Suicide module: Analyzing suicide instruction
+mythril.laser.plugin.plugins.coverage.coverage_plugin [INFO]: Number of new instructions covered in tx 1: 5
+mythril.laser.ethereum.svm [INFO]: Finished symbolic execution
+mythril.laser.plugin.plugins.coverage.coverage_plugin [INFO]: Achieved 4.81% coverage for code: 6080604052600080556001805534801561001857600080fd5b506103ef806100286000396000f300608060405260043610610082576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168062362a951461008757806306661abd146100bd5780632e1a7d4d146100e857806359f1286d14610115578063a444f5e91461016c578063d5d44d8014610199578063e1c7392a146101f0575b600080fd5b6100bb600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610207565b005b3480156100c957600080fd5b506100d2610257565b6040518082815260200191505060405180910390f35b3480156100f457600080fd5b506101136004803603810190808035906020019092919050505061025d565b005b34801561012157600080fd5b50610156600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061032d565b6040518082815260200191505060405180910390f35b34801561017857600080fd5b5061019760048036038101908080359060200190929190505050610376565b005b3480156101a557600080fd5b506101da600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103a1565b6040518082815260200191505060405180910390f35b3480156101fc57600080fd5b506102056103b9565b005b34600260008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254019250508190555050565b60015481565b80600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410151561032a573373ffffffffffffffffffffffffffffffffffffffff168160405160006040518083038185875af19250505015156102dc57600080fd5b80600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825403925050819055505b50565b6000600260008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b6000805414156103855761039e565b3373ffffffffffffffffffffffffffffffffffffffff16ff5b50565b60026020528060005260406000206000915090505481565b60016000819055505600a165627a7a72305820277f21f86e51b107a527ae56d4ed3b77bb312ef031f846674588be28b76282830029
+mythril.laser.plugin.plugins.coverage.coverage_plugin [INFO]: Achieved 99.81% coverage for code: 608060405260043610610082576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168062362a951461008757806306661abd146100bd5780632e1a7d4d146100e857806359f1286d14610115578063a444f5e91461016c578063d5d44d8014610199578063e1c7392a146101f0575b600080fd5b6100bb600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610207565b005b3480156100c957600080fd5b506100d2610257565b6040518082815260200191505060405180910390f35b3480156100f457600080fd5b506101136004803603810190808035906020019092919050505061025d565b005b34801561012157600080fd5b50610156600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061032d565b6040518082815260200191505060405180910390f35b34801561017857600080fd5b5061019760048036038101908080359060200190929190505050610376565b005b3480156101a557600080fd5b506101da600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103a1565b6040518082815260200191505060405180910390f35b3480156101fc57600080fd5b506102056103b9565b005b34600260008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254019250508190555050565b60015481565b80600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410151561032a573373ffffffffffffffffffffffffffffffffffffffff168160405160006040518083038185875af19250505015156102dc57600080fd5b80600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825403925050819055505b50565b6000600260008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b6000805414156103855761039e565b3373ffffffffffffffffffffffffffffffffffffffff16ff5b50565b60026020528060005260406000206000915090505481565b60016000819055505600a165627a7a72305820277f21f86e51b107a527ae56d4ed3b77bb312ef031f846674588be28b76282830029
+mythril.laser.plugin.plugins.instruction_profiler [INFO]: Total: 6.5004563331604 s
+[ADD         ]   2.0597 %,  nr     88,  total   0.1339 s,  avg   0.0015 s,  min   0.0011 s,  max   0.0025 s
+[AND         ]   1.1804 %,  nr     53,  total   0.0767 s,  avg   0.0014 s,  min   0.0010 s,  max   0.0027 s
+[CALL        ]   0.3599 %,  nr      4,  total   0.0234 s,  avg   0.0058 s,  min   0.0055 s,  max   0.0066 s
+[CALLDATALOAD]   7.5002 %,  nr     24,  total   0.4875 s,  avg   0.0203 s,  min   0.0148 s,  max   0.1249 s
+[CALLDATASIZE]   0.5335 %,  nr     24,  total   0.0347 s,  avg   0.0014 s,  min   0.0011 s,  max   0.0019 s
+[CALLER      ]   0.3195 %,  nr     13,  total   0.0208 s,  avg   0.0016 s,  min   0.0012 s,  max   0.0026 s
+[CALLVALUE   ]   0.6384 %,  nr     29,  total   0.0415 s,  avg   0.0014 s,  min   0.0009 s,  max   0.0031 s
+[CODECOPY    ]   3.8173 %,  nr      1,  total   0.2481 s,  avg   0.2481 s,  min   0.2481 s,  max   0.2481 s
+[DIV         ]   0.1028 %,  nr      4,  total   0.0067 s,  avg   0.0017 s,  min   0.0014 s,  max   0.0018 s
+[DUP1        ]   4.4300 %,  nr    196,  total   0.2880 s,  avg   0.0015 s,  min   0.0009 s,  max   0.0030 s
+[DUP2        ]   1.9857 %,  nr     92,  total   0.1291 s,  avg   0.0014 s,  min   0.0010 s,  max   0.0022 s
+[DUP3        ]   0.6145 %,  nr     28,  total   0.0399 s,  avg   0.0014 s,  min   0.0010 s,  max   0.0017 s
+[DUP4        ]   0.2486 %,  nr     12,  total   0.0162 s,  avg   0.0013 s,  min   0.0011 s,  max   0.0017 s
+[DUP6        ]   0.0889 %,  nr      4,  total   0.0058 s,  avg   0.0014 s,  min   0.0012 s,  max   0.0017 s
+[DUP8        ]   0.0914 %,  nr      4,  total   0.0059 s,  avg   0.0015 s,  min   0.0013 s,  max   0.0016 s
+[EQ          ]   0.7501 %,  nr     32,  total   0.0488 s,  avg   0.0015 s,  min   0.0012 s,  max   0.0019 s
+[GAS         ]   0.0873 %,  nr      4,  total   0.0057 s,  avg   0.0014 s,  min   0.0012 s,  max   0.0017 s
+[ISZERO      ]   1.1263 %,  nr     45,  total   0.0732 s,  avg   0.0016 s,  min   0.0011 s,  max   0.0022 s
+[JUMP        ]   2.8429 %,  nr     62,  total   0.1848 s,  avg   0.0030 s,  min   0.0022 s,  max   0.0046 s
+[JUMPDEST    ]   3.0651 %,  nr    135,  total   0.1992 s,  avg   0.0015 s,  min   0.0010 s,  max   0.0033 s
+[JUMPI       ]   6.2617 %,  nr     69,  total   0.4070 s,  avg   0.0059 s,  min   0.0026 s,  max   0.0970 s
+[LT          ]   0.1902 %,  nr      8,  total   0.0124 s,  avg   0.0015 s,  min   0.0012 s,  max   0.0019 s
+[MLOAD       ]   8.3744 %,  nr     32,  total   0.5444 s,  avg   0.0170 s,  min   0.0165 s,  max   0.0184 s
+[MSTORE      ]  14.2106 %,  nr     57,  total   0.9238 s,  avg   0.0162 s,  min   0.0107 s,  max   0.0254 s
+[POP         ]   3.9826 %,  nr    180,  total   0.2589 s,  avg   0.0014 s,  min   0.0010 s,  max   0.0030 s
+[PUSH1       ]   9.4067 %,  nr    278,  total   0.6115 s,  avg   0.0022 s,  min   0.0010 s,  max   0.1297 s
+[PUSH2       ]   3.3084 %,  nr    130,  total   0.2151 s,  avg   0.0017 s,  min   0.0010 s,  max   0.0042 s
+[PUSH20      ]   4.1526 %,  nr     49,  total   0.2699 s,  avg   0.0055 s,  min   0.0016 s,  max   0.1698 s
+[PUSH29      ]   0.1264 %,  nr      4,  total   0.0082 s,  avg   0.0021 s,  min   0.0019 s,  max   0.0022 s
+[PUSH3       ]   0.0891 %,  nr      4,  total   0.0058 s,  avg   0.0014 s,  min   0.0013 s,  max   0.0015 s
+[PUSH4       ]   0.6963 %,  nr     28,  total   0.0453 s,  avg   0.0016 s,  min   0.0012 s,  max   0.0033 s
+[SHA3        ]  10.5333 %,  nr     20,  total   0.6847 s,  avg   0.0342 s,  min   0.0329 s,  max   0.0367 s
+[SLOAD       ]   0.7201 %,  nr     28,  total   0.0468 s,  avg   0.0017 s,  min   0.0013 s,  max   0.0027 s
+[SSTORE      ]   0.3386 %,  nr     14,  total   0.0220 s,  avg   0.0016 s,  min   0.0011 s,  max   0.0020 s
+[SUB         ]   0.9306 %,  nr     40,  total   0.0605 s,  avg   0.0015 s,  min   0.0012 s,  max   0.0022 s
+[SWAP1       ]   2.9555 %,  nr    136,  total   0.1921 s,  avg   0.0014 s,  min   0.0010 s,  max   0.0031 s
+[SWAP2       ]   1.1531 %,  nr     52,  total   0.0750 s,  avg   0.0014 s,  min   0.0011 s,  max   0.0024 s
+[SWAP3       ]   0.7276 %,  nr     32,  total   0.0473 s,  avg   0.0015 s,  min   0.0011 s,  max   0.0023 s
+
+mythril.analysis.security [INFO]: Starting analysis
+mythril.mythril.mythril_analyzer [INFO]: Solver statistics:
+Query count: 248
+Solver time: 30.82393527030945
+==== External Call To User-Supplied Address ====
+SWC ID: 107
+Severity: Low
+Contract: SimpleDAO
+Function name: withdraw(uint256)
+PC address: 717
+Estimated Gas Usage: 7850 - 62511
+A call to a user-supplied address is executed.
+An external message call to an address specified by the caller is executed. Note that the callee account might contain arbitrary code and could re-enter any function within this contract. Reentering the contract in an intermediate state may lead to unexpected behaviour. Make sure that no state modifications are executed after this call and/or reentrancy guards are in place.
+--------------------
+In file: /data/mythx-tests/05222022-26/SimpleDAOWithImport.sol:20
+
+ue(amount)());
+      credit[msg
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0xc10400020f07ba, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x2, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw(uint256), txdata: 0x2e1a7d4d, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: SimpleDAO
+Function name: withdraw(uint256)
+PC address: 717
+Estimated Gas Usage: 7850 - 62511
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: /data/mythx-tests/05222022-26/SimpleDAOWithImport.sol:20
+
+ue(amount)());
+      credit[msg
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0xa91400280088801, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x4000000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: donate(address), txdata: 0x00362a95000000000000000000000000deadbeefdeadbeefdeadbeefdeadbeefdeadbeef, value: 0x1
+Caller: [ATTACKER], function: withdraw(uint256), txdata: 0x2e1a7d4d0000000000000000000000000000000000000000000000000000000000000001, value: 0x0
+
+==== State access after external call ====
+SWC ID: 107
+Severity: Medium
+Contract: SimpleDAO
+Function name: withdraw(uint256)
+PC address: 801
+Estimated Gas Usage: 7850 - 62511
+Read of persistent state following external call
+The contract account state is accessed after an external call to a user defined address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state.
+--------------------
+In file: /data/mythx-tests/05222022-26/SimpleDAOWithImport.sol:21
+
+amount;
+    }
+  }
+
+  fun
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1c10800020f0738, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x2, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw(uint256), txdata: 0x2e1a7d4d, value: 0x0
+
+==== State access after external call ====
+SWC ID: 107
+Severity: Medium
+Contract: SimpleDAO
+Function name: withdraw(uint256)
+PC address: 808
+Estimated Gas Usage: 7850 - 62511
+Write to persistent state following external call
+The contract account state is accessed after an external call to a user defined address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state.
+--------------------
+In file: /data/mythx-tests/05222022-26/SimpleDAOWithImport.sol:21
+
+amount;
+    }
+  }
+
+  fun
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1c10800020f0738, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x2, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw(uint256), txdata: 0x2e1a7d4d, value: 0x0
+
+==== Unprotected Selfdestruct ====
+SWC ID: 106
+Severity: High
+Contract: SimpleDAO
+Function name: run(uint256)
+PC address: 925
+Estimated Gas Usage: 1102 - 1197
+Any sender can cause the contract to self-destruct.
+Any sender can trigger execution of the SELFDESTRUCT instruction to destroy this contract account and withdraw its balance to an arbitrary address. Review the transaction trace generated for this issue and make sure that appropriate security controls are in place to prevent unrestricted access.
+--------------------
+In file: /data/mythx-tests/lib/SelfDestructMultiTxFeasible.sol:16
+
+g.sender);
+    }
+}
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x48000040000090001, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: init(), txdata: 0xe1c7392a, value: 0x0
+Caller: [ATTACKER], function: run(uint256), txdata: 0xa444f5e9, value: 0x0
+
+

@@ -1,0 +1,188 @@
+PS E:\temp>
+PS E:\temp>
+PS E:\temp> docker run -v E:\share\:/data mythril/myth -v4 analyze /data/mythx-tests\05222022-25/SimpleDAO.sol
+mythril.mythril.mythril_config [INFO]: Creating mythril data directory
+mythril.mythril.mythril_config [INFO]: No config file found. Creating default: /root/.mythril/config.ini
+mythril.mythril.mythril_config [INFO]: Infura key not provided, so onchain access is disabled. Use --infura-id <INFURA_ID> or set it in the environment variable INFURA_ID or in the ~/.mythril/config.ini file
+mythril.support.signatures [INFO]: Using signature database at /root/.mythril/signatures.db
+solcx [INFO]: Downloading from https://solc-bin.ethereum.org/linux-amd64/solc-linux-amd64-v0.4.24+commit.e67f0147
+solcx [INFO]: solc 0.4.24 successfully installed at: /root/.solcx/solc-v0.4.24
+solcx [INFO]: Using solc version 0.4.24
+mythril.laser.ethereum.svm [INFO]: LASER EVM initialized with dynamic loader: <mythril.support.loader.DynLoader object at 0x7fbb041783a0>
+mythril.laser.ethereum.strategy.extensions.bounded_loops [INFO]: Loaded search strategy extension: Loop bounds (limit = 3)
+mythril.laser.plugin.loader [INFO]: Loading laser plugin: coverage
+mythril.laser.plugin.loader [INFO]: Loading laser plugin: mutation-pruner
+mythril.laser.plugin.loader [INFO]: Loading laser plugin: call-depth-limit
+mythril.laser.plugin.loader [INFO]: Loading laser plugin: instruction-profiler
+mythril.laser.plugin.loader [INFO]: Loading laser plugin: dependency-pruner
+mythril.laser.plugin.loader [INFO]: Instrumenting symbolic vm with plugin: coverage
+mythril.laser.plugin.loader [INFO]: Instrumenting symbolic vm with plugin: mutation-pruner
+mythril.laser.plugin.loader [INFO]: Instrumenting symbolic vm with plugin: call-depth-limit
+mythril.laser.plugin.loader [INFO]: Instrumenting symbolic vm with plugin: instruction-profiler
+mythril.laser.plugin.loader [INFO]: Instrumenting symbolic vm with plugin: dependency-pruner
+mythril.laser.ethereum.svm [INFO]: Starting contract creation transaction
+mythril.laser.ethereum.svm [INFO]: Finished contract creation, found 1 open states
+mythril.laser.ethereum.svm [INFO]: Starting message call transaction, iteration: 0, 1 initial states
+mythril.laser.plugin.plugins.coverage.coverage_plugin [INFO]: Number of new instructions covered in tx 0: 381
+mythril.laser.ethereum.svm [INFO]: Starting message call transaction, iteration: 1, 2 initial states
+mythril.laser.plugin.plugins.coverage.coverage_plugin [INFO]: Number of new instructions covered in tx 1: 0
+mythril.laser.ethereum.svm [INFO]: Finished symbolic execution
+mythril.laser.plugin.plugins.coverage.coverage_plugin [INFO]: Achieved 4.96% coverage for code: 608060405234801561001057600080fd5b50610320806100206000396000f300608060405260043610610061576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168062362a95146100665780632e1a7d4d1461009c57806359f1286d146100c9578063d5d44d8014610120575b600080fd5b61009a600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610177565b005b3480156100a857600080fd5b506100c7600480360381019080803590602001909291905050506101c6565b005b3480156100d557600080fd5b5061010a600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610294565b6040518082815260200191505060405180910390f35b34801561012c57600080fd5b50610161600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506102dc565b6040518082815260200191505060405180910390f35b346000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254019250508190555050565b806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054101515610291573373ffffffffffffffffffffffffffffffffffffffff168160405160006040518083038185875af192505050151561024457600080fd5b806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825403925050819055505b50565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b600060205280600052604060002060009150905054815600a165627a7a723058206e30dd6a1350d9e457dd57b7cb9134fa0581040430eb8fd668b91856781aa3300029
+mythril.laser.plugin.plugins.coverage.coverage_plugin [INFO]: Achieved 99.74% coverage for code: 608060405260043610610061576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168062362a95146100665780632e1a7d4d1461009c57806359f1286d146100c9578063d5d44d8014610120575b600080fd5b61009a600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610177565b005b3480156100a857600080fd5b506100c7600480360381019080803590602001909291905050506101c6565b005b3480156100d557600080fd5b5061010a600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610294565b6040518082815260200191505060405180910390f35b34801561012c57600080fd5b50610161600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506102dc565b6040518082815260200191505060405180910390f35b346000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254019250508190555050565b806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054101515610291573373ffffffffffffffffffffffffffffffffffffffff168160405160006040518083038185875af192505050151561024457600080fd5b806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825403925050819055505b50565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b600060205280600052604060002060009150905054815600a165627a7a723058206e30dd6a1350d9e457dd57b7cb9134fa0581040430eb8fd668b91856781aa3300029
+mythril.laser.plugin.plugins.instruction_profiler [INFO]: Total: 3.6812047958374023 s
+[ADD         ]   2.1346 %,  nr     57,  total   0.0786 s,  avg   0.0014 s,  min   0.0011 s,  max   0.0021 s
+[AND         ]   1.4938 %,  nr     39,  total   0.0550 s,  avg   0.0014 s,  min   0.0010 s,  max   0.0029 s
+[CALL        ]   0.4064 %,  nr      3,  total   0.0150 s,  avg   0.0050 s,  min   0.0048 s,  max   0.0053 s
+[CALLDATALOAD]   6.3526 %,  nr     15,  total   0.2339 s,  avg   0.0156 s,  min   0.0151 s,  max   0.0170 s
+[CALLDATASIZE]   0.5843 %,  nr     15,  total   0.0215 s,  avg   0.0014 s,  min   0.0010 s,  max   0.0029 s
+[CALLER      ]   0.3452 %,  nr      9,  total   0.0127 s,  avg   0.0014 s,  min   0.0011 s,  max   0.0018 s
+[CALLVALUE   ]   0.4385 %,  nr     13,  total   0.0161 s,  avg   0.0012 s,  min   0.0010 s,  max   0.0015 s
+[CODECOPY    ]   5.2996 %,  nr      1,  total   0.1951 s,  avg   0.1951 s,  min   0.1951 s,  max   0.1951 s
+[DIV         ]   0.1230 %,  nr      3,  total   0.0045 s,  avg   0.0015 s,  min   0.0013 s,  max   0.0017 s
+[DUP1        ]   4.0490 %,  nr    112,  total   0.1491 s,  avg   0.0013 s,  min   0.0009 s,  max   0.0020 s
+[DUP2        ]   2.0266 %,  nr     57,  total   0.0746 s,  avg   0.0013 s,  min   0.0010 s,  max   0.0018 s
+[DUP3        ]   0.6609 %,  nr     18,  total   0.0243 s,  avg   0.0014 s,  min   0.0010 s,  max   0.0018 s
+[DUP4        ]   0.3102 %,  nr      9,  total   0.0114 s,  avg   0.0013 s,  min   0.0011 s,  max   0.0015 s
+[DUP6        ]   0.1144 %,  nr      3,  total   0.0042 s,  avg   0.0014 s,  min   0.0012 s,  max   0.0018 s
+[DUP8        ]   0.1096 %,  nr      3,  total   0.0040 s,  avg   0.0013 s,  min   0.0012 s,  max   0.0016 s
+[EQ          ]   0.4604 %,  nr     12,  total   0.0169 s,  avg   0.0014 s,  min   0.0012 s,  max   0.0020 s
+[GAS         ]   0.1118 %,  nr      3,  total   0.0041 s,  avg   0.0014 s,  min   0.0012 s,  max   0.0016 s
+[ISZERO      ]   0.9214 %,  nr     22,  total   0.0339 s,  avg   0.0015 s,  min   0.0011 s,  max   0.0020 s
+[JUMP        ]   2.0228 %,  nr     27,  total   0.0745 s,  avg   0.0028 s,  min   0.0021 s,  max   0.0036 s
+[JUMPDEST    ]   2.2074 %,  nr     62,  total   0.0813 s,  avg   0.0013 s,  min   0.0010 s,  max   0.0026 s
+[JUMPI       ]   3.6504 %,  nr     31,  total   0.1344 s,  avg   0.0043 s,  min   0.0032 s,  max   0.0060 s
+[LT          ]   0.2398 %,  nr      6,  total   0.0088 s,  avg   0.0015 s,  min   0.0012 s,  max   0.0018 s
+[MLOAD       ]   8.2435 %,  nr     18,  total   0.3035 s,  avg   0.0169 s,  min   0.0163 s,  max   0.0182 s
+[MSTORE      ]  20.5540 %,  nr     40,  total   0.7566 s,  avg   0.0189 s,  min   0.0108 s,  max   0.0996 s
+[POP         ]   3.7978 %,  nr    106,  total   0.1398 s,  avg   0.0013 s,  min   0.0010 s,  max   0.0019 s
+[PUSH1       ]   6.1797 %,  nr    159,  total   0.2275 s,  avg   0.0014 s,  min   0.0010 s,  max   0.0030 s
+[PUSH2       ]   2.2276 %,  nr     57,  total   0.0820 s,  avg   0.0014 s,  min   0.0010 s,  max   0.0028 s
+[PUSH20      ]   3.6400 %,  nr     36,  total   0.1340 s,  avg   0.0037 s,  min   0.0016 s,  max   0.0611 s
+[PUSH29      ]   0.1745 %,  nr      3,  total   0.0064 s,  avg   0.0021 s,  min   0.0019 s,  max   0.0023 s
+[PUSH3       ]   0.1162 %,  nr      3,  total   0.0043 s,  avg   0.0014 s,  min   0.0014 s,  max   0.0016 s
+[PUSH4       ]   0.5195 %,  nr     12,  total   0.0191 s,  avg   0.0016 s,  min   0.0012 s,  max   0.0031 s
+[SHA3        ]  13.6604 %,  nr     15,  total   0.5029 s,  avg   0.0335 s,  min   0.0326 s,  max   0.0353 s
+[SLOAD       ]   0.6739 %,  nr     15,  total   0.0248 s,  avg   0.0017 s,  min   0.0013 s,  max   0.0026 s
+[SSTORE      ]   0.2402 %,  nr      6,  total   0.0088 s,  avg   0.0015 s,  min   0.0012 s,  max   0.0018 s
+[SUB         ]   0.9742 %,  nr     24,  total   0.0359 s,  avg   0.0015 s,  min   0.0012 s,  max   0.0023 s
+[SWAP1       ]   3.0539 %,  nr     84,  total   0.1124 s,  avg   0.0013 s,  min   0.0010 s,  max   0.0031 s
+[SWAP2       ]   1.1320 %,  nr     30,  total   0.0417 s,  avg   0.0014 s,  min   0.0010 s,  max   0.0028 s
+[SWAP3       ]   0.7498 %,  nr     21,  total   0.0276 s,  avg   0.0013 s,  min   0.0010 s,  max   0.0017 s
+
+mythril.analysis.security [INFO]: Starting analysis
+mythril.mythril.mythril_analyzer [INFO]: Solver statistics:
+Query count: 130
+Solver time: 15.125682592391968
+==== External Call To User-Supplied Address ====
+SWC ID: 107
+Severity: Low
+Contract: SimpleDAO
+Function name: withdraw(uint256)
+PC address: 565
+Estimated Gas Usage: 7828 - 62489
+A call to a user-supplied address is executed.
+An external message call to an address specified by the caller is executed. Note that the callee account might contain arbitrary code and could re-enter any function within this contract. Reentering the contract in an intermediate state may lead to unexpected behaviour. Make sure that no state modifications are executed after this call and/or reentrancy guards are in place.
+--------------------
+In file: /data/mythx-tests\05222022-25/SimpleDAO.sol:17
+
+value(amount)());
+      credit[
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x21c100000200382d, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0xe5fff7f, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw(uint256), txdata: 0x2e1a7d4d, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: SimpleDAO
+Function name: withdraw(uint256)
+PC address: 565
+Estimated Gas Usage: 7828 - 62489
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: /data/mythx-tests\05222022-25/SimpleDAO.sol:17
+
+value(amount)());
+      credit[
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x100000000000000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: donate(address), txdata: 0x00362a95000000000000000000000000deadbeefdeadbeefdeadbeefdeadbeefdeadbeef, value: 0x1
+Caller: [ATTACKER], function: withdraw(uint256), txdata: 0x2e1a7d4d0000000000000000000000000000000000000000000000000000000000000001, value: 0x0
+
+==== State access after external call ====
+SWC ID: 107
+Severity: Medium
+Contract: SimpleDAO
+Function name: withdraw(uint256)
+PC address: 648
+Estimated Gas Usage: 7828 - 62489
+Read of persistent state following external call
+The contract account state is accessed after an external call to a user defined address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state.
+--------------------
+In file: /data/mythx-tests\05222022-25/SimpleDAO.sol:18
+
+]-=amount;
+    }
+  }
+
+
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x21c10000020cb47d, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x367bff9b, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw(uint256), txdata: 0x2e1a7d4d, value: 0x0
+
+==== State access after external call ====
+SWC ID: 107
+Severity: Medium
+Contract: SimpleDAO
+Function name: withdraw(uint256)
+PC address: 655
+Estimated Gas Usage: 7828 - 62489
+Write to persistent state following external call
+The contract account state is accessed after an external call to a user defined address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state.
+--------------------
+In file: /data/mythx-tests\05222022-25/SimpleDAO.sol:18
+
+]-=amount;
+    }
+  }
+
+
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x21c10000020cb47d, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x367bff9b, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw(uint256), txdata: 0x2e1a7d4d, value: 0x0
+
+
+PS E:\temp>
